@@ -8,9 +8,10 @@ document.addEventListener('DOMContentLoaded', function(){
         for(let c = 0; c < 16; c++){
             const col = document.createElement('div');
             col.classList.add('column');
+            row.appendChild(column);
 
         }
-        row.appendChild(column);
+        gridContainer.appendChild(row);
     }
-    gridContainer.appendChild(row);
+    
 });
