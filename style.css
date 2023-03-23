@@ -7,23 +7,29 @@ body{
     background-color: blue;
     color: white;
 }
+#gridContainer{
+    border: 1px solid black;
+    height: 960px;
+    width: 960px;
+}
 .row{
     display: flex;
     flex: 1;
     justify-content: space-between;
-    border: 1px solid black;
+
 }
 .column{
     display: flex;
     flex: 1;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid black;
+
 }
 .row .column{
-    width: 30px;
-    height: 30px;
+    width: 3em;
+    height: 3em;
 }
-.row .column:hover{
-    background-color: lightgray;
+.row .column:hover,
+.row .column.hovered{
+    background-color: black;
 }

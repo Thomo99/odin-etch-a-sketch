@@ -29,6 +29,9 @@ document.addEventListener('DOMContentLoaded', function(){
                 for(let c = 0; c < newSize; c++){
                     const col = document.createElement('div');
                     col.classList.add('column');
+                    col.addEventListener('mouseover', function() {
+                        col.classList.add('hovered');
+                    });
                     row.appendChild(col);
                 }
                 gridContainer.appendChild(row);
@@ -49,6 +52,9 @@ document.addEventListener('DOMContentLoaded', function(){
         for(let c = 0; c < 16; c++){
             const col = document.createElement('div');
             col.classList.add('column');
+            col.addEventListener('mouseover', function() {
+                col.classList.add('hovered');
+            });
             row.appendChild(col);
             //console.log(c);//c - check
 
